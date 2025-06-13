@@ -30,7 +30,7 @@ pip install requests
 ## ⚙️ Usage
 
 ```bash
-python3 digest_bruteforce.py \
+python3 digest-bruteforce.py \
   -u usernames.txt \
   -p passwords.txt \
   -t http://target.com/protected \
