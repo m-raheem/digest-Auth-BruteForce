@@ -25,3 +25,21 @@ Install dependencies with:
 
 ```bash
 pip install requests
+```
+
+## ⚙️ Usage
+
+```bash
+python3 digest_bruteforce.py \
+  -u usernames.txt \
+  -p passwords.txt \
+  -t http://target.com/protected \
+  -th 20
+```
+
+| 🧩 Argument        | 📘 Description                                 |
+| ------------------ | ---------------------------------------------- |
+| `-u`, `--userlist` | 📂 Path to the username wordlist file          |
+| `-p`, `--passlist` | 🔐 Path to the password wordlist file          |
+| `-t`, `--target`   | 🎯 Target URL (Digest Auth protected endpoint) |
+| `-th`, `--threads` | 🚀 Number of threads to use (default: `10`)    |
